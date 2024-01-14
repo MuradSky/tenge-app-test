@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-app</title>
+
+    <link href="https://db.onlinewebfonts.com/c/575fc498ad34ad0f411e618dad9ed36a?family=Graphik+LC+Web+Regular" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <svg width="0" height="0" class="hidden">
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Close">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.46967 16.4697C6.17678 16.7626 6.17678 17.2374 6.46967 17.5303C6.76256 17.8232 7.23744 17.8232 7.53033 17.5303L12 13.0607L16.4697 17.5303C16.7626 17.8232 17.2374 17.8232 17.5303 17.5303C17.8232 17.2374 17.8232 16.7626 17.5303 16.4697L13.0607 12L17.5303 7.53033C17.8232 7.23744 17.8232 6.76256 17.5303 6.46967C17.2374 6.17678 16.7626 6.17678 16.4697 6.46967L12 10.9393L7.53033 6.46967C7.23744 6.17678 6.76256 6.17678 6.46967 6.46967C6.17678 6.76256 6.17678 7.23744 6.46967 7.53033L10.9393 12L6.46967 16.4697Z" fill="currentColor" ></path>
+        </symbol>
+
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="menu-icon">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8373 22.8105C11.1302 23.1034 11.6051 23.1034 11.898 22.8105L19.1621 15.5463C19.2981 15.4104 19.3709 15.2352 19.3807 15.0573C19.4058 14.8378 19.3342 14.6094 19.1659 14.441L11.902 7.17716C11.6092 6.88427 11.1343 6.88427 10.8414 7.17717C10.5485 7.47006 10.5485 7.94493 10.8414 8.23783L17.5954 14.9918L10.8373 21.7498C10.5445 22.0427 10.5445 22.5176 10.8373 22.8105Z" fill="currentColor"></path>
+        </symbol>
+    </svg>
+
+    <div class="masthead js-masthead">
+        <div class="masthead__inner">
+            <div class="masthead__img">
+                <picture>
+                    <source srcset="./leading-img-s.png" width="159" height="54" media="(max-width: 768px)">
+                    <source srcset="./leading-img-m.png" width="185" height="54" media="(max-width: 1024px)">
+                    <img src="./leading-img.png" alt="" width="212" height="54">
+                </picture>
+            </div>
+            <div class="masthead__content">
+                <div class="masthead__inner-text">
+                    <strong>Black Friday</strong><span>, 24-27 Nov</span>
+                </div>
+                <div class="masthead__inner-text">
+                    <strong>10%OFF</strong>
+                </div>
+                <div class="masthead__inner-text">
+                    Use code <strong>10FRIDAY</strong> <span>at checkout</span>
+                </div>
+            </div>
+            <a href="#" class="masthead__link">
+                <span>Shop now</span>
+            </a>
+            <a href="#" class="masthead__link-arrow" hidden>
+                <svg width="30" height="30">
+                    <use xlink:href="#menu-icon"></use>
+                </svg>
+            </a>
+            <button class="masthead__close">
+                <svg width="24" height="24">
+                    <use xlink:href="#Close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+ 
+
+    <div class="card js-card" hidden>
+        <div class="card__inner">
+            <div class="card__background">
+                <picture>
+                    <source srcset="./card-bg-s.png" width="393" height="349" media="(max-width: 600px)">
+                    <img src="./card-bg.png" alt="" width="600" height="349">
+                </picture>
+            </div>
+            <div class="card__content">
+                <button class="card__close" data-close>
+                    <svg class="icon" width="24" height="24">
+                        <use xlink:href="#Close"></use>
+                    </svg>
+                </button>
+
+                <div class="card__content-inner">
+                    <div class="card__title"><strong>Black Friday</strong></div>
+                    <div class="card__percent"><strong>10%OFF</strong></div>
+                    <div class="card__sub-title">
+                        Use code <span>10FRIDAY</span> at checkout
+                    </div>
+                    <a href="#" class="card__link">Shop now <span>through Monday</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
